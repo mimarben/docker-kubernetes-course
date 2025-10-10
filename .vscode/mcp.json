@@ -1,0 +1,10 @@
+{
+	"servers": [
+		{
+			"type": "github",
+			"name": "GitHub MCP Server",
+			"owner": "mimarben",
+			"repo": "docker-kubernetes-course"
+		}
+	]
+}
