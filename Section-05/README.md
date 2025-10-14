@@ -9,14 +9,14 @@ docker network create goals-net
 ## Database mongodb
 
 ```bash
-docker run -d --name mongodb --network goals-net mongo
+docker run -d --name mongodb -v data:/data/db --network goals-net -e  MONGO_INITDB_ROOT_USERNAME=root -e MONGO_INITDB_ROOT_PASSWORD=admin mongo
 ```
 
 ## Backend node.js
 ```bash
 docker build -t goals-node .
 
-docker run --name goals-backend --rm -d -p 8080:8080 --network goals-net goals-node
+docker run --name goals-backend -v /home/martinm/src/dev-src/docker-kubernetes-course/Section-05/backend:/app -v logs:/app/logs --rm -d -p 8080:8080 --network goals-net goals-node
 ```
 
 el puerto 8080 esta abierto para el front end
