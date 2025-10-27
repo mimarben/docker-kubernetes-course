@@ -33,5 +33,8 @@ no hace falta la network de docker porque react como todos los frontent se ejecu
 
 
 -it es muy importante, sino se para react sino se para el docker
+```bash
+docker run -v /home/martinm/src/dev-src/docker-kubernetes-course/Section-05/frontend/src:/app/src --name goals-frontend -rm p 3000:3000 -it goals-react 
+```
 
 
