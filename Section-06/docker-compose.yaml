@@ -4,7 +4,7 @@ services:
     image: 'mongo'
     volumes: 
       - data:/data/db
-    # environment: 
+    # environment: thei
     #   MONGO_INITDB_ROOT_USERNAME: max
     #   MONGO_INITDB_ROOT_PASSWORD: secret
       # - MONGO_INITDB_ROOT_USERNAME=max
